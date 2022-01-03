@@ -13,4 +13,6 @@
     <color name="red_desat">#FF3F3F</color>
     <color name="light_green">#7BC868</color>
     <color name="deep_green">#4CA456</color>
+    <color name="neo_bg">#E4ECF4</color>
+    <color name="neo_fg">#F2F8FF</color>
 </resources>
