@@ -5,8 +5,11 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
 
 import com.geekym.presin.Fragments.account.account_Fragment;
 import com.geekym.presin.Fragments.home.home_Fragment;
@@ -25,6 +28,7 @@ public class HomeScreen extends AppCompatActivity {
         setContentView(R.layout.activity_home_screen);
 
         bottomBar = findViewById(R.id.bottomBar);
+
         getSupportFragmentManager().beginTransaction().replace(R.id.main, new home_Fragment()).commit();
 
         bottomBar.setSelectedItemId(R.id.home);

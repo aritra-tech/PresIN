@@ -1,5 +1,7 @@
 package com.geekym.presin.Fragments.attendace;
 
+import android.content.Intent;
+import android.os.Build;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -7,7 +9,9 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 
+import com.geekym.presin.Attendance_Scanner;
 import com.geekym.presin.R;
 
 /**
@@ -16,6 +20,8 @@ import com.geekym.presin.R;
  * create an instance of this fragment.
  */
 public class scan_Fragment extends Fragment {
+
+    private Button scan_attendance;
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -61,6 +67,17 @@ public class scan_Fragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_scan_, container, false);
+        View view = inflater.inflate(R.layout.fragment_scan_, container, false);
+
+        scan_attendance = view.findViewById(R.id.scan_attendance);
+        scan_attendance.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(getActivity(), Attendance_Scanner.class);
+                startActivity(i);
+            }
+        });
+
+        return view;
     }
 }
