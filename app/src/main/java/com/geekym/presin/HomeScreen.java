@@ -8,6 +8,10 @@ import androidx.fragment.app.Fragment;
 import android.os.Bundle;
 import android.view.MenuItem;
 
+import com.geekym.presin.Fragments.account.account_Fragment;
+import com.geekym.presin.Fragments.home.home_Fragment;
+import com.geekym.presin.Fragments.attendace.scan_Fragment;
+import com.geekym.presin.Fragments.tools.tools_Fragment;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationBarView;
 

@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/neo_bg"
     tools:context=".Splashscreen">
 
     <TextView
@@ -11,7 +12,7 @@
         android:layout_height="30dp"
         android:gravity="center"
         android:text="attendance is a snap away"
-        android:textColor="@color/deep_green"
+        android:textColor="@color/blackish_grey"
         android:textSize="16dp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -29,6 +30,6 @@
         app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/logo" />
+        app:srcCompat="@drawable/minimal_no_bg" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
