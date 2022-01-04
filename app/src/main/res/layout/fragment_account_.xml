@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/neo_bg"
-    tools:context=".account_Fragment">
+    tools:context=".Fragments.account.account_Fragment">
 
 
     <TextView

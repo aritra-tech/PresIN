@@ -6,7 +6,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@color/neo_bg"
     android:id="@+id/home"
-    tools:context=".home_Fragment">
+    tools:context=".Fragments.home.home_Fragment">
 
     <TextView
         android:id="@+id/textView"

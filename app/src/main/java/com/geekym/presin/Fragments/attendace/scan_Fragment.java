@@ -1,5 +1,7 @@
-package com.geekym.presin;
+package com.geekym.presin.Fragments.attendace;
 
+import android.content.Intent;
+import android.os.Build;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -7,13 +9,19 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
+
+import com.geekym.presin.Attendance_Scanner;
+import com.geekym.presin.R;
 
 /**
  * A simple {@link Fragment} subclass.
- * Use the {@link tools_Fragment#newInstance} factory method to
+ * Use the {@link scan_Fragment#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class tools_Fragment extends Fragment {
+public class scan_Fragment extends Fragment {
+
+    private Button scan_attendance;
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -24,7 +32,7 @@ public class tools_Fragment extends Fragment {
     private String mParam1;
     private String mParam2;
 
-    public tools_Fragment() {
+    public scan_Fragment() {
         // Required empty public constructor
     }
 
@@ -34,11 +42,11 @@ public class tools_Fragment extends Fragment {
      *
      * @param param1 Parameter 1.
      * @param param2 Parameter 2.
-     * @return A new instance of fragment tools_Fragment.
+     * @return A new instance of fragment scan_Fragment.
      */
     // TODO: Rename and change types and number of parameters
-    public static tools_Fragment newInstance(String param1, String param2) {
-        tools_Fragment fragment = new tools_Fragment();
+    public static scan_Fragment newInstance(String param1, String param2) {
+        scan_Fragment fragment = new scan_Fragment();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);
@@ -59,6 +67,17 @@ public class tools_Fragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_tools_, container, false);
+        View view = inflater.inflate(R.layout.fragment_scan_, container, false);
+
+        scan_attendance = view.findViewById(R.id.scan_attendance);
+        scan_attendance.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(getActivity(), Attendance_Scanner.class);
+                startActivity(i);
+            }
+        });
+
+        return view;
     }
 }
