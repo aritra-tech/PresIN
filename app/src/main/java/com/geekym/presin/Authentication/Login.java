@@ -1,4 +1,4 @@
-package com.geekym.presin;
+package com.geekym.presin.Authentication;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -7,6 +7,9 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+
+import com.geekym.presin.HomeScreen;
+import com.geekym.presin.R;
 
 public class Login extends AppCompatActivity {
 

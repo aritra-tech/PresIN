@@ -31,13 +31,16 @@
             android:name=".Attendance_Scanner"
             android:exported="false" />
         <activity
-            android:name=".Register_Final"
+            android:name=".Authentication.ForgotPassword"
             android:exported="false" />
         <activity
-            android:name=".Register"
+            android:name=".Authentication.Register_Final"
             android:exported="false" />
         <activity
-            android:name=".Login"
+            android:name=".Authentication.Register"
+            android:exported="false" />
+        <activity
+            android:name=".Authentication.Login"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

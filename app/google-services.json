@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "595483666093",
+    "project_id": "presin-3e468",
+    "storage_bucket": "presin-3e468.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:595483666093:android:5d299fa7416f987808c824",
+        "android_client_info": {
+          "package_name": "com.geekym.presin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "595483666093-ocofune9cd9l3r24gubqk70igeisi0t9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.geekym.presin",
+            "certificate_hash": "36b5bdb429860d893ef79b40061e10f0ddf6c9a6"
+          }
+        },
+        {
+          "client_id": "595483666093-inkct3ncn2n99je1fomn30fe9fk3mr6p.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBlSCM4VePx8H05EDj0ZvZA6G3bHC39qw0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "595483666093-inkct3ncn2n99je1fomn30fe9fk3mr6p.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
