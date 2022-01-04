@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Login">
+    tools:context=".Authentication.Login">
 
     <RelativeLayout
         android:id="@+id/relativeLayout"
@@ -73,7 +73,7 @@
         android:layout_height="38dp"
         android:layout_marginTop="16dp"
         android:gravity="center"
-        android:text="Forgot Password?"
+        android:text="forgot password?"
         android:textColor="@color/blue"
         android:textSize="13dp"
         android:textStyle="bold"
@@ -86,7 +86,7 @@
         android:layout_height="35dp"
         android:layout_marginTop="20dp"
         android:buttonTint="@color/blackish_grey"
-        android:text="Remember Me"
+        android:text="remember me"
         android:textColor="@color/blackish_grey"
         app:layout_constraintEnd_toStartOf="@+id/forgetpass"
         app:layout_constraintHorizontal_bias="0.0"
@@ -110,7 +110,7 @@
         android:id="@+id/noacc"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="dont have an account? Signup"
+        android:text="don't have an account? Signup"
         android:textColor="@color/blue"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/button"

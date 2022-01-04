@@ -11,7 +11,7 @@
         android:layout_width="272dp"
         android:layout_height="30dp"
         android:gravity="center"
-        android:text="attendance is a snap away"
+        android:text="Attendance is just a snap away"
         android:textColor="@color/blackish_grey"
         android:textSize="16dp"
         android:textStyle="bold"

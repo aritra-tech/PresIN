@@ -1,4 +1,4 @@
-package com.geekym.presin;
+package com.geekym.presin.Authentication;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -6,6 +6,9 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+
+import com.geekym.presin.HomeScreen;
+import com.geekym.presin.R;
 
 public class Register_Final extends AppCompatActivity {
 
