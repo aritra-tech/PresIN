@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/neo_bg"
     tools:context=".Authentication.Register_Final">
 
     <RelativeLayout
@@ -24,80 +25,7 @@
             app:srcCompat="@drawable/logo_white" />
     </RelativeLayout>
 
-    <TextView
-        android:id="@+id/textView8"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="4dp"
-        android:text="Almost done"
-        android:textColor="@color/blackish_grey"
-        android:textSize="30dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.175"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/relativeLayout" />
-
-    <EditText
-        android:id="@+id/editTextTextPassword"
-        android:layout_width="326dp"
-        android:layout_height="46dp"
-        android:layout_marginTop="24dp"
-        android:background="@drawable/text_box"
-        android:ems="10"
-        android:hint="password"
-        android:inputType="textPassword"
-        android:paddingLeft="15dp"
-        app:layout_constraintEnd_toEndOf="@+id/editTextTextEmailAddress"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/editTextTextEmailAddress"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextEmailAddress" />
-
-    <EditText
-        android:id="@+id/editTextphone"
-        android:layout_width="326dp"
-        android:layout_height="46dp"
-        android:layout_marginTop="24dp"
-        android:background="@drawable/text_box"
-        android:ems="10"
-        android:hint="password"
-        android:inputType="textPassword"
-        android:paddingLeft="15dp"
-        app:layout_constraintEnd_toEndOf="@+id/editTextTextPassword"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/editTextTextPassword"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword" />
-
-    <EditText
-        android:id="@+id/editTextTextPersonName"
-        android:layout_width="326dp"
-        android:layout_height="46dp"
-        android:layout_marginTop="340dp"
-        android:background="@drawable/text_box"
-        android:ems="10"
-        android:hint="full name"
-        android:inputType="textPersonName"
-        android:paddingLeft="15dp"
-        android:textColor="@color/blackish_grey"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.494"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <EditText
-        android:id="@+id/editTextTextEmailAddress"
-        android:layout_width="326dp"
-        android:layout_height="46dp"
-        android:layout_marginTop="24dp"
-        android:background="@drawable/text_box"
-        android:ems="10"
-        android:hint="email"
-        android:inputType="textEmailAddress"
-        android:paddingLeft="15dp"
-        app:layout_constraintEnd_toEndOf="@+id/editTextTextPersonName"
-        app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
-
-    <Button
+    <!--Button
         android:id="@+id/button"
         android:layout_width="217dp"
         android:layout_height="45dp"
@@ -109,7 +37,119 @@
         app:layout_constraintEnd_toEndOf="@+id/editTextphone"
         app:layout_constraintHorizontal_bias="0.504"
         app:layout_constraintStart_toStartOf="@+id/editTextphone"
-        app:layout_constraintTop_toBottomOf="@+id/editTextphone" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextphone" /-->
+
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="Almost done"
+        android:textColor="@color/blackish_grey"
+        android:textSize="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.112"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayout" />
+
+    <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+        android:id="@+id/branch"
+        android:layout_width="357dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/text_box"
+        android:gravity="center_vertical"
+        android:paddingLeft="15dp"
+        android:textSize="19dp"
+        app:hintText="Select your branch"
+        app:layout_constraintEnd_toEndOf="@+id/relativeLayout"
+        app:layout_constraintStart_toStartOf="@+id/relativeLayout"
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayout" />
+
+    <EditText
+        android:id="@+id/class_roll"
+        android:layout_width="357dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/text_box"
+        android:gravity="center_vertical"
+        android:hint="Class Roll No."
+        android:inputType="numberDecimal"
+        android:paddingLeft="28dp"
+        android:textAllCaps="false"
+        android:textColorHint="@color/blackish_grey"
+        android:textSize="15dp"
+        app:layout_constraintEnd_toEndOf="@+id/branch"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/branch"
+        app:layout_constraintTop_toBottomOf="@+id/branch" />
+
+    <EditText
+        android:id="@+id/univ_roll"
+        android:layout_width="357dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/text_box"
+        android:gravity="center_vertical"
+        android:hint="University Roll No."
+        android:inputType="numberDecimal"
+        android:paddingLeft="28dp"
+        android:textAllCaps="false"
+        android:textColorHint="@color/blackish_grey"
+        android:textSize="15dp"
+        app:layout_constraintEnd_toEndOf="@+id/class_roll"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/class_roll"
+        app:layout_constraintTop_toBottomOf="@+id/class_roll" />
+
+    <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+        android:id="@+id/sub_code"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/text_box"
+        android:gravity="center_vertical"
+        android:paddingLeft="15dp"
+        android:textSize="19dp"
+        app:hintText="Subject Code"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/univ_roll"
+        app:layout_constraintTop_toBottomOf="@+id/univ_roll"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+        android:id="@+id/sem"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/text_box"
+        android:gravity="center_vertical"
+        android:paddingLeft="15dp"
+        android:textSize="19dp"
+        app:hintText="Semester"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/sub_code"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/univ_roll"
+        app:layout_constraintTop_toBottomOf="@+id/univ_roll"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button"
+        android:layout_width="236dp"
+        android:layout_height="54dp"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/pos_but"
+        android:text="create account"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/sub_code"
+        app:layout_constraintStart_toStartOf="@+id/sem"
+        app:layout_constraintTop_toBottomOf="@+id/univ_roll"
+        app:layout_constraintVertical_bias="0.918" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

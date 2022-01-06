@@ -1,15 +1,14 @@
-package com.geekym.presin.Fragments.attendace;
+package com.geekym.presin.Fragments.attendance;
 
 import android.content.Intent;
-import android.os.Build;
 import android.os.Bundle;
 
+import androidx.cardview.widget.CardView;
 import androidx.fragment.app.Fragment;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
 
 import com.geekym.presin.Attendance_Scanner;
 import com.geekym.presin.R;
@@ -21,7 +20,7 @@ import com.geekym.presin.R;
  */
 public class scan_Fragment extends Fragment {
 
-    private Button scan_attendance;
+    private CardView scan_attendance;
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER

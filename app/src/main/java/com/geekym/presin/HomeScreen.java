@@ -5,15 +5,12 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
-import android.view.View;
-import android.widget.Button;
 
 import com.geekym.presin.Fragments.account.account_Fragment;
 import com.geekym.presin.Fragments.home.home_Fragment;
-import com.geekym.presin.Fragments.attendace.scan_Fragment;
+import com.geekym.presin.Fragments.attendance.scan_Fragment;
 import com.geekym.presin.Fragments.tools.tools_Fragment;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationBarView;

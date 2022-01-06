@@ -15,7 +15,7 @@
         android:layout_gravity="bottom"
         android:layout_margin="30dp"
         android:background="@drawable/cnb"
-        app:elevation="2dp"
+        app:elevation="5dp"
         app:itemIconSize="30dp"
         app:itemIconTint="@drawable/item_selector"
         app:itemRippleColor="@android:color/transparent"

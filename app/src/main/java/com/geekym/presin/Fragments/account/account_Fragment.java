@@ -1,13 +1,17 @@
 package com.geekym.presin.Fragments.account;
 
+import android.content.Intent;
 import android.os.Bundle;
 
+import androidx.cardview.widget.CardView;
 import androidx.fragment.app.Fragment;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 
+import com.geekym.presin.Authentication.Login;
 import com.geekym.presin.R;
 
 /**
@@ -16,6 +20,8 @@ import com.geekym.presin.R;
  * create an instance of this fragment.
  */
 public class account_Fragment extends Fragment {
+
+    private Button Logout;
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -61,6 +67,18 @@ public class account_Fragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_account_, container, false);
+        View view = inflater.inflate(R.layout.fragment_account_, container, false);
+
+        Logout = view.findViewById(R.id.logout);
+        Logout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(getActivity(), Login.class);
+                startActivity(i);
+                getActivity().finish();
+            }
+        });
+
+        return view;
     }
 }
