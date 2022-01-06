@@ -111,31 +111,45 @@
       app:layout_constraintStart_toStartOf="@+id/editTextphone"
       app:layout_constraintTop_toBottomOf="@+id/editTextphone" />
 
-  <TextView
-      android:id="@+id/haveacc"
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
-      android:layout_marginEnd="4dp"
-      android:text="Login"
-      android:textColor="@color/blue"
+  <RelativeLayout
+      android:layout_width="222dp"
+      android:layout_height="38dp"
+      android:layout_marginTop="12dp"
       app:layout_constraintBottom_toBottomOf="parent"
       app:layout_constraintEnd_toEndOf="@+id/button"
-      app:layout_constraintTop_toBottomOf="@+id/button"
-      app:layout_constraintVertical_bias="0.608" />
-
-  <TextView
-      android:id="@+id/mess"
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
-      android:layout_marginTop="28dp"
-      android:text="already have an account?"
-      android:textColor="@color/blackish_grey"
-      app:layout_constraintBottom_toBottomOf="parent"
-      app:layout_constraintEnd_toStartOf="@+id/haveacc"
-      app:layout_constraintHorizontal_bias="0.0"
       app:layout_constraintStart_toStartOf="@+id/button"
       app:layout_constraintTop_toBottomOf="@+id/button"
-      app:layout_constraintVertical_bias="0.0" />
+      app:layout_constraintVertical_bias="0.058">
+
+    <TextView
+        android:id="@+id/haveacc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="3dp"
+        android:layout_marginBottom="6dp"
+        android:text="Login"
+        android:textColor="@color/blue" />
+
+    <TextView
+        android:id="@+id/mess"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="6dp"
+        android:layout_toStartOf="@+id/haveacc"
+        android:text="Already have an account?"
+        android:textColor="@color/blackish_grey" />
+
+  </RelativeLayout>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

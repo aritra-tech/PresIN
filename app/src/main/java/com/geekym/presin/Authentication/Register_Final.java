@@ -29,7 +29,7 @@ import java.util.ArrayList;
 public class Register_Final extends AppCompatActivity {
 
     Spinner branch, semester, subject_code;
-    ArrayList<String> br = new ArrayList<>(), sm, sbc;
+    ArrayList<String> br = new ArrayList<>(), sm = new ArrayList<>(), sbc = new ArrayList<>();
     String branch_of_student, class_roll, univ_roll, sem, sub_code, email, phone, pass, name;
     EditText cr, ur;
 
@@ -82,7 +82,7 @@ public class Register_Final extends AppCompatActivity {
             }
         });
 
-        semester.setAdapter(new ArrayAdapter<>(Register_Final.this, R.layout.support_simple_spinner_dropdown_item, br));
+        semester.setAdapter(new ArrayAdapter<>(Register_Final.this, R.layout.support_simple_spinner_dropdown_item, sm));
         semester.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
@@ -97,7 +97,7 @@ public class Register_Final extends AppCompatActivity {
             }
         });
 
-        subject_code.setAdapter(new ArrayAdapter<>(Register_Final.this, R.layout.support_simple_spinner_dropdown_item, br));
+        subject_code.setAdapter(new ArrayAdapter<>(Register_Final.this, R.layout.support_simple_spinner_dropdown_item, sbc));
         subject_code.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
