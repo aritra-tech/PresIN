@@ -32,11 +32,13 @@ public class Register_Final extends AppCompatActivity {
     ArrayList<String> br = new ArrayList<>(), sm = new ArrayList<>(), sbc = new ArrayList<>();
     String branch_of_student, class_roll, univ_roll, sem, sub_code, email, phone, pass, name;
     EditText cr, ur;
+   // Button Register;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register_final);
+       // Register = findViewById(R.id.button);
         branch = findViewById(R.id.branch);
         semester = findViewById(R.id.sem);
         subject_code = findViewById(R.id.sub_code);
@@ -66,6 +68,15 @@ public class Register_Final extends AppCompatActivity {
         sbc.add("CS301");
         sbc.add("CS302");
         sbc.add("CS303");
+
+//        Register.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                Intent x = new Intent(Register_Final.this, HomeScreen.class);
+//                startActivity(x);
+//                finish();
+//            }
+//        });
 
         branch.setAdapter(new ArrayAdapter<>(Register_Final.this, R.layout.support_simple_spinner_dropdown_item, br));
         branch.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
